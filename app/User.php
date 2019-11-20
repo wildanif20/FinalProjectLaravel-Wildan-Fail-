@@ -3,11 +3,10 @@
 namespace App;
 
 use App\Biodata;
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable; 
+use Cartalyst\Sentinel\Users\EloquentUser as CartalystUser;
 
-
-class User extends Authenticatable
+class User extends CartalystUser
 {
     use Notifiable;
 
